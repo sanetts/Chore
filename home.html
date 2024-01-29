@@ -26,13 +26,13 @@
             padding: 20px;
         }
 
-        .stats-container {
+        .status_container {
             display: flex;
             justify-content: space-around;
             margin-top: 30px;
         }
 
-        .stats-box {
+        .status_box {
             background-color: #3498db;
             padding: 20px;
             border-radius: 10px;
@@ -40,7 +40,7 @@
             transition: background-color 0.3s ease;
         }
 
-        .stats-box:hover {
+        .status_box:hover {
             background-color: #2980b9;
         }
 
@@ -62,23 +62,21 @@
     </header>
 
     <div class="container">
-        <!-- Statistics Section -->
-        <div class="stats-container">
-            <div class="stats-box" onclick="redirectToChoreManagement('inProgress')">
+        <div class="status_container">
+            <div class="status_box" onclick="redirectToChoreManagement('inProgress')">
                 <h2>In Progress</h2>
                 <p>15 tasks</p>
             </div>
-            <div class="stats-box" onclick="redirectToChoreManagement('complete')">
+            <div class="status_box" onclick="redirectToChoreManagement('complete')">
                 <h2>Complete</h2>
                 <p>30 tasks</p>
             </div>
-            <div class="stats-box" onclick="redirectToChoreManagement('completed')">
+            <div class="status_box" onclick="redirectToChoreManagement('completed')">
                 <h2>Completed</h2>
                 <p>50 tasks</p>
             </div>
         </div>
 
-        <!-- Additional content for the welcome page can be added here -->
 
     </div>
 
@@ -87,9 +85,7 @@
     </footer>
 
     <script>
-        // Function to redirect to the chore management page with the specified status
         function redirectToChoreManagement(status) {
-            // You can replace the alert with the actual redirection logic
             alert(`Redirecting to Chore Management for ${status} tasks`);
         }
     </script>

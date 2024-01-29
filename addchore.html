@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Chore - Chore Management System</title>
+    <link rel="stylesheet" href="style.css"> <!-- Include your stylesheet -->
+</head>
+<body>
+
+    <h2>Assign Chore</h2>
+
+    <form action="#" method="post" id="choreAssignmentForm">
+
+        <label for="assignPerson">Assign Person:</label>
+        <select type="dropdown" id="assignPerson" name="assignPerson" required>
+            <option value="1">Sam George</option>
+            <option value="2">John Cena</option>
+
+        </select><br>
+
+
+        <label for="assignChore">Assign Chore:</label>
+        <select type="dropdown" id="assignChore" name="assignChore" required>
+
+            <option value="1">Mow the Lawn</option>
+            <option value="2">Clean the Garage</option>
+
+        </select><br>
+
+
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate" name="dueDate" required><br>
+
+
+        <input type="submit" id="assignChoreButton" name="assignChoreButton" value="Assign Chore">
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

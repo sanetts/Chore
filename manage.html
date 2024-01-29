@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Chores - Chore Management System</title>
-    <link rel="stylesheet" href="style.css"> <!-- Include your stylesheet -->
+    <link rel="stylesheet" href="manage.css"> 
 </head>
 <body>
 
     <h2>Manage Chores</h2>
 
-    <!-- Ongoing/Pending Chores Section -->
+    <button id="add_chore_button" onclick="openAddChoreForm()">Add Chore</button>
+
+
     <section>
         <h3>Ongoing/Pending Chore Assignments</h3>
         <table>
@@ -25,7 +27,6 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Sample data, replace with actual chore data from your system -->
                 <tr>
                     <td>Mow the Lawn</td>
                     <td>John Doe</td>
@@ -34,12 +35,10 @@
                     <td>Pending</td>
                     <td><button onclick="updateChoreStatus('completed', 'choreId1')">Mark as Completed</button></td>
                 </tr>
-                <!-- Add more rows as needed -->
             </tbody>
         </table>
     </section>
 
-    <!-- Completed Chores Section -->
     <section>
         <h3>Completed Chores</h3>
         <table>
@@ -53,7 +52,7 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Sample data, replace with actual completed chore data from your system -->
+
                 <tr>
                     <td>Clean the Garage</td>
                     <td>Jane Doe</td>
@@ -61,12 +60,11 @@
                     <td>2024-02-01</td>
                     <td>Completed</td>
                 </tr>
-                <!-- Add more rows as needed -->
+
             </tbody>
         </table>
     </section>
 
-    <!-- Include your script file for handling actions -->
     <script src="script.js"></script>
 
 </body>
