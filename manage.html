@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Chores - Chore Management System</title>
+    <link rel="stylesheet" href="style.css"> <!-- Include your stylesheet -->
+</head>
+<body>
+
+    <h2>Manage Chores</h2>
+
+    <!-- Ongoing/Pending Chores Section -->
+    <section>
+        <h3>Ongoing/Pending Chore Assignments</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chore Name</th>
+                    <th>Assigned By</th>
+                    <th>Date Assigned</th>
+                    <th>Date Due</th>
+                    <th>Chore Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample data, replace with actual chore data from your system -->
+                <tr>
+                    <td>Mow the Lawn</td>
+                    <td>John Doe</td>
+                    <td>2024-01-29</td>
+                    <td>2024-02-05</td>
+                    <td>Pending</td>
+                    <td><button onclick="updateChoreStatus('completed', 'choreId1')">Mark as Completed</button></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Completed Chores Section -->
+    <section>
+        <h3>Completed Chores</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chore Name</th>
+                    <th>Assigned By</th>
+                    <th>Date Assigned</th>
+                    <th>Date Due</th>
+                    <th>Chore Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample data, replace with actual completed chore data from your system -->
+                <tr>
+                    <td>Clean the Garage</td>
+                    <td>Jane Doe</td>
+                    <td>2024-01-25</td>
+                    <td>2024-02-01</td>
+                    <td>Completed</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Include your script file for handling actions -->
+    <script src="script.js"></script>
+
+</body>
+</html>
